@@ -1,0 +1,78 @@
+<!--
+    CLASE 19 - Posicionamiento
+-Con las herramientas que tenemos hasta ahora, no podemos
+hacer que elementos se pisen entre si. 
+Los elementos ocupan su lugar, y no pueden pisarse.
+
+-La herramienta de posicionamiento nos da la posibilidad 
+de hacer eso y complejizar el diseno.
+-IMPORTANTE: la maquetacion principal se hace con flex, no con esto!
+
+POSITION ESTANDAR: STATIC
+Otra opcion:
+RELATIVE (Si solo hago esto no veo cambios pero esta preparado para
+recibir otras ordenes: top, bottom, left, right)
+
+Estos valores permiten mover al elemento como yo quiera pero se 
+interpreta asi:
+"ALEJATE DE TU IZQ 300PX"
+No significa moverse a un lado, sino alejarse de ese lado
+
+No puedo combinar ordenes contradictorias!
+ejemplo, izq y der
+top y bot
+
+-cuando se mueve el objeto, el resto no ocupa su lugar, 
+se respeta, lo reserva
+
+-Es compatible con flexbox. El cuadrado que tiene puesto position
+sigue haciendo lo que le dije, pero a partir de su posicion original.
+Si cambio la posicion en flex, se adapta a esa posicion
+
+Hacer ejercicio 1 y 5
+
+
+
+Las imagenes siempre tienen que tener un div rodeandola!!
+Overflow hidden al div que lo contiene
+
+
+____________
+Clase 20, lo que faltaba de posicionamiento:
+
+Que pasa si no quiero que se reserve el lugar del elemento que movi porque ese
+lugar me queda presente me trae problemas
+
+POSITION: absolute
+-El elemento con position absolute escapa al flujo de los elementos de la pagina
+Ignoran la posicion anterior del elemento.
+Hay que usarlo con atencion, proquee el elemento con el position queda casi flotando
+en el codigo.
+
+-Cuando posiciono de manera absoluta la REFERENCIA ES EL BODY
+Sirve por ejemplo para las cosas como esos chat que quedan fijos al costadito abajo
+No ocupa ningun espacio y no depende del resto del maquetado
+
+-OJO, IMPORTANTE:
+Cualquier antecesor posicionado de manera relativa de un elemento, el 
+elemento con absolute adentro lo toma como referencia
+
+Position: fixed
+Esta fijo en mi rol como espectador
+Te sigue por el scroll
+
+-Tienen que tener width 100%
+-Escapa al flujo y los otros elementos lo ignoran
+-La solucion para la barra navegacion es darle un padding top al body que deje el lugar
+que necesita
+
+Indice Z: indice tridimensional
+-Los fixed suelen quedar por detras
+-Los absolute suelen quedar por delante
+z-index: numero
+
+
+
+
+
+-->
